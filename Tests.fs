@@ -35,3 +35,15 @@ let ``When 4 is multipled by 7 expect 28``() =
 [<Test>]
 let ``When 18 is multipled by 23 expect 414``() =
     Assert.AreEqual(414, multiply 18 23)
+
+[<Test>]
+let ``When -18 is multipled by 23 expect -414``() =
+    Assert.AreEqual(-414, multiply -18 23)
+
+[<Test>]
+let ``When 18 is multipled by -23 expect -414``() =
+    Assert.AreEqual(-414, multiply 18 -23)
+
+[<Test>]
+let ``When -18 is multipled by -23 expect 414``() =
+    Assert.AreEqual(414, multiply -18 -23)
