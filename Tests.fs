@@ -58,5 +58,9 @@ let ``The problem example``() =
 [<TestCase(3,  -4,-12)>]  // First argument positive, second negative
 [<TestCase(-4, -6, 24)>]  // Both arguments negative
 [<TestCase(18, 23, 414)>] // The problem example
+[<TestCase(11, 0, 0)>]    // Positive times zero
+[<TestCase(0, 11, 0)>]    // Zero times positive
+[<TestCase(-11, 0, 0)>]   // Negative times zero
+[<TestCase(0, -11, 0)>]   // Zero times negative
 let ``When x is multipled by y expect expected`` x y expected =
     Assert.AreEqual(expected, multiply x y)
